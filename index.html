@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playsation website by Harshita </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="logo.png" alt="image is loading" class="logo">
+            <nav>
+           <ul id="menuList">
+            <li><a href="">Game controllers</a>  </li>
+                <li><a href="">VR Accessories</a></li>
+                <li><a href="">Media Remotes</a></li>
+                <li><a href="">Others</a></li>
+            </ul>
+
+            </nav><!--navigation links-->
+            <img src="menu.png" class="menu-icon" onclick="togglemenu()"><!--through javacript we are creating a toggle menu-->
+
+        </div>
+     <!--NAVBAR CLASS CLOSED-->
+
+        <div class="row">
+            <div class="col-1">
+                <h2>PS4 V2<br>Dualshock 4</h2>
+                <h3>Wireless Controller for Playsation</h3>
+                <p>Compatible generic</p>
+                <h4>$32.50</h4>
+                <button type="button">Buy now<img src="arrow.png"></button>
+                </div>
+        <div class="col-2">
+       <img src="controller.png" class="controller">
+       <div class="color-box"></div>
+       <div class="add-btn">
+       <img src="add.png" >
+       <p><small>Add to Cart</small></p>
+    </div>
+        </div>
+        </div>
+        <!--ROW CLASS CLOSED-->
+
+        <div class="social-links">
+            <img src="fb.png" >
+            <img src="ig.png" alt="">
+            <img src="tw.png" alt="">
+        </div>
+    </div>
+
+        <!--javascript-->
+        <script>
+            var menukist= document.getElementById("menuList");
+            menukist.style.maxHeight="0px";
+            function togglemenu(){
+                if(menukist.style.maxHeight=="0px"){
+                    menukist.style.maxHeight="130px";
+                }
+                else{
+                    menukist.style.maxHeight="0px";
+                }
+            }
+        </script>
+   
+   
+</body>
+</html>
